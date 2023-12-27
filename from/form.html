@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <link rel="stylesheet" href="from.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="home">
+    <div class="box">
+      <label for="name">Enter your Name: </label>
+      <input type="text" name="" id="" />
+    </div>
+
+    <div class="box">
+      <label for="profession">Enter your profession: </label>
+      <input type="text" name="" id="" placeholder="e.g. Software Engineer" />
+    </div>
+
+    <div class="box">
+      <label for="address">Enter your address: </label>
+      <input type="text" name="" id="" placeholder="city/state/Country" />
+    </div>
+
+    <div class="box">
+      <label for="phoneInput">Enter your Phone No.: </label>
+      <input id="phone" type="tel" name="phone" />
+    </div>
+
+    <div class="box">
+      <label for="professional-statement">professional-statement </label>
+      <input class="bigbox" type="text" name="" id="" />
+    </div>
+
+    <div class="box">
+      <label for="work-experience">work-experience </label>
+      <input class="bigbox" type="text" name="" id="" />
+    </div>
+
+    <div class="box">
+      <label for="Education">Education </label>
+      <input class="bigbox" type="text" name="" id="" />
+    </div>
+    <div class="box">
+      <label for="pro-skills">pro-skills </label>
+      <input class="bigbox" type="text" name="" id="" />
+    </div>
+    <div class="box">
+      <label for="references">references </label>
+      <input class="bigbox" type="text" name="" id="" />
+    </div>
+    <div class="box">
+      <label for="interests">interest </label>
+      <input class="bigbox" type="text" name="" id="" />
+    </div>
+  </div>
+  
+    <script>
+      const phoneInputField = document.querySelector("#phone");
+      const phoneInput = window.intlTelInput(phoneInputField, {
+        utilsScript:
+          "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+      });
+    </script>
+  </body>
+</html>
